@@ -3,10 +3,10 @@ multithreading, JavaFX <br />
  <br />
 Input matrix A: <br />
  <br />
- 1  2  3  4  <br />
- 5  6  7  8  <br />
- 9 10 11 12  <br />
-13 14 15 16  <br />
+ 1 &emsp; 2 &emsp; 3 &emsp; 4  <br />
+ 5 &emsp; 6 &emsp; 7 &emsp; 8  <br />
+ 9 &emsp; 10 &emsp; 11 &emsp; 12  <br />
+13 &emsp; 14 &emsp;15 &emsp; 16  <br />
  <br />
 Input matrix B: <br />
  <br />
