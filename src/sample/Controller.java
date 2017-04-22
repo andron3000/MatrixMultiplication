@@ -13,6 +13,9 @@ public class Controller {
     private TextField sz;
 
     @FXML
+    private TextField time;
+
+    @FXML
     private TextArea txtA;
 
     @FXML
@@ -73,7 +76,9 @@ public class Controller {
         return matrix;
     }
 
-    private void matrixMultiplication() {
+    private void matrixMultiplication() throws InterruptedException {
+
+        long start = System.nanoTime();
 
         //creates 9 Worker threads. Each thread Calculates a Matrix Value and sets it to C matrix
         for (int i = 0; i < M; i++) {
@@ -82,6 +87,10 @@ public class Controller {
                 threads[i][j].start();
             }
         }
+
+        threads[M -1][N - 1].join();
+
+        long totalTime = System.nanoTime() - start;
 
         // DISPLAY RESULT
 
@@ -95,6 +104,9 @@ public class Controller {
 
         txtC.setDisable(false);
         txtC.setText(result);
+
+        time.setDisable(false);
+        time.setText(String.valueOf(totalTime/1e6));
     }
 
 

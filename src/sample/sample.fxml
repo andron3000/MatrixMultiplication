@@ -17,9 +17,9 @@
       <RowConstraints />
    </rowConstraints>
    <children>
-      <Pane prefHeight="271.0" prefWidth="602.0">
+      <Pane prefHeight="297.0" prefWidth="602.0">
          <children>
-            <Button fx:id="btn" layoutX="312.0" layoutY="212.0" mnemonicParsing="false" onAction="#buttonClickAction" prefHeight="25.0" prefWidth="276.0" text="calculate">
+            <Button fx:id="btn" layoutX="312.0" layoutY="212.0" mnemonicParsing="false" onAction="#buttonClickAction" prefHeight="61.0" prefWidth="276.0" text="calculate">
                <font>
                   <Font name="System Bold Italic" size="12.0" />
                </font></Button>
@@ -33,6 +33,8 @@
             <Label layoutX="387.0" layoutY="91.0" text="=" />
             <TextArea fx:id="txtC" disable="true" layoutX="404.0" layoutY="40.0" prefHeight="151.0" prefWidth="178.0" />
             <Label layoutX="473.0" layoutY="23.0" text="C [m, n]" />
+            <TextField fx:id="time" layoutX="106.0" layoutY="250.0" />
+            <Label layoutX="32.0" layoutY="254.0" text="total time = " />
          </children>
       </Pane>
    </children>
